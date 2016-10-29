@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+		<title>注册</title>
+		<link rel="stylesheet" type="text/css" href="../css/register.css"/>
+		<link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_1477359726_2781382.css"/>
+	</head>
+	<body>
+		<div class="register">
+			<header>
+				<img src="../img/login/logo.png" />
+			</header>
+			<section>
+				<div class="name">
+					<input type="text" id="name" placeholder="你的昵称" />
+					<span class="iconfont icon-dengludengluming36x40"></span>
+				</div>
+				<div class="user">
+					<input type="text" name="user" id="user" placeholder="手机或邮箱" />
+					<span class="iconfont icon-shouji"></span>
+				</div>
+				<div class="pwd">
+					<input type="password" name="pwd" id="pwd" placeholder="设置密码" />
+					<span class="iconfont icon-suo"></span>
+				</div>
+				<div class="pwd1">
+					<input type="password" name="pwd1" id="pwd1" placeholder="确认密码" />
+					<span class="iconfont icon-suo"></span>
+				</div>
+				<a href="javascript:;" id="btn">注册</a>
+			
+			</section>
+			<footer>
+				<p class="relevance">
+					<span class="left"></span>
+					<span>关联账号快速登录</span>
+					<span class="right"></span>
+				</p>
+				<p class="weiboIcon">
+					<a class="iconfont icon-weibo" href="https://api.weibo.com/oauth2/authorize?client_id=2512457640&response_type=code&display=page&state=1477362223&redirect_uri=http%3A%2F%2Fpassport.baidu.com%2Fphoenix%2Faccount%2Fafterauth%3Fmkey%3Dfbcc44185f5fa83029a1624340dea42d"></a>
+					<a class="iconfont icon-douban" href="https://www.douban.com/service/auth2/auth?client_id=07b4f47aa74e2448171edd6ff5ea6cd8&redirect_uri=http%3A%2F%2Fwww.jianshu.com%2Fusers%2Fauth%2Fdouban%2Fcallback&response_type=code&scope=douban_basic_common%2Cshuo_basic_r%2Cshuo_basic_w&state=52e175cbe817c149121af11bd9dcdde7e6f05cc0660ced1b"></a>
+					<a class="iconfont icon-qq" href="https://graph.qq.com/oauth/show?which=Login&display=pc&client_id=100312028&response_type=code&display=pc&state=1477362041&redirect_uri=http%3A%2F%2Fpassport.baidu.com%2Fphoenix%2Faccount%2Fafterauth%3Fmkey%3D3f9f02e217c368bb2ed83d9571a20e29&scope=get_user_info,get_other_info,add_t,add_share"></a>
+				</p>
+				<div class="hint">
+					<p id="hintP"></p>
+				</div>
+				<div class="look">
+					<a href="login.html">已有账号登录</a>
+					<a href="../index1.html">随便看看</a>
+				</div>
+			</footer>
+		</div>
+		<script src="../js/jquery-1.11.3.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/public.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/register.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

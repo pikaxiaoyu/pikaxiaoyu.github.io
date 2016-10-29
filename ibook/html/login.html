@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>登录</title>
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+		<link rel="stylesheet" type="text/css" href="../css/register.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/login.css"/>
+		<link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_1477316527_7258258.css"/>
+	</head>
+	<body>
+		<div class="register">
+			<header>
+				<img src="../img/login/logo.png" />
+			</header>
+
+			<div class="form">
+				<div class="user">
+					<input type="text" name="user" id="user" placeholder="手机或邮箱" />
+					<span class="iconfont icon-dengludengluming36x40"></span>
+				</div>
+				<div class="pwd">
+					<input type="password" name="pwd" id="pwd" placeholder="密码" />
+					<span class="iconfont icon-suo"></span>
+				</div>
+				<p class="text-btn">
+					<a href="javascript:;">忘记密码？</a>|
+					<a href="../html/register.html">立即注册</a>
+				</p>
+				<input type="button" id="btn" value="登录" />
+				
+			</div>
+			<footer>
+				<p class="relevance">
+					<span class="left"></span>
+					<span>关联账号快速登录</span>
+					<span class="right"></span>
+				</p>
+				<p class="weiboIcon">
+					<a class="iconfont icon-weibo" href="https://api.weibo.com/oauth2/authorize?client_id=2512457640&response_type=code&display=page&state=1477362223&redirect_uri=http%3A%2F%2Fpassport.baidu.com%2Fphoenix%2Faccount%2Fafterauth%3Fmkey%3Dfbcc44185f5fa83029a1624340dea42d"></a>
+					<a class="iconfont icon-douban" href="https://www.douban.com/service/auth2/auth?client_id=07b4f47aa74e2448171edd6ff5ea6cd8&redirect_uri=http%3A%2F%2Fwww.jianshu.com%2Fusers%2Fauth%2Fdouban%2Fcallback&response_type=code&scope=douban_basic_common%2Cshuo_basic_r%2Cshuo_basic_w&state=52e175cbe817c149121af11bd9dcdde7e6f05cc0660ced1b"></a>
+					<a class="iconfont icon-qq" href="https://graph.qq.com/oauth/show?which=Login&display=pc&client_id=100312028&response_type=code&display=pc&state=1477362041&redirect_uri=http%3A%2F%2Fpassport.baidu.com%2Fphoenix%2Faccount%2Fafterauth%3Fmkey%3D3f9f02e217c368bb2ed83d9571a20e29&scope=get_user_info,get_other_info,add_t,add_share"></a>
+				</p>
+				<div class="hint">
+					<p id="hintP"></p>
+				</div>
+			</footer>
+		</div>
+		<script src="../js/jquery-1.11.3.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/public.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/login.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

@@ -1,0 +1,110 @@
+#nav li:nth-of-type(5), li:nth-of-type(5) .icon-geren {
+  color: #47d6c4 !important; }
+
+#nav li:nth-of-type(1), li:nth-of-type(1) .icon-fangzi {
+  color: #333 !important; }
+
+header {
+  font-size: 1.7rem;
+  text-align: center; }
+
+section {
+  width: 100%;
+  height: 100vh;
+  flex: 1;
+  background: #fcfcfc;
+  display: flex;
+  flex-flow: column;
+  overflow-y: scroll; }
+  section #information {
+    padding: 0 1rem;
+    height: 7.9rem;
+    flex-grow: 0;
+    background: #fff;
+    margin-bottom: 1.28rem; }
+    section #information .top-head {
+      width: 100%;
+      height: 4.48rem;
+      margin: 1.8rem auto;
+      display: flex;
+      flex-flow: row nowrap; }
+      section #information .top-head > #head {
+        width: 4.48rem;
+        flex-grow: 0;
+        align-items: center; }
+        section #information .top-head > #head > img {
+          width: 4.48rem;
+          height: 4.48rem;
+          border-radius: 100%; }
+      section #information .top-head .name {
+        flex-grow: 1; }
+        section #information .top-head .name > p {
+          padding-left: 1rem; }
+          section #information .top-head .name > p:nth-of-type(1) {
+            font-size: 1.28rem;
+            line-height: 2.35rem; }
+          section #information .top-head .name > p:nth-of-type(2) {
+            font-size: 0.8rem; }
+            section #information .top-head .name > p:nth-of-type(2) > span {
+              display: inline-block;
+              width: 3rem;
+              height: 1.4rem;
+              line-height: 1.4rem;
+              color: #fff;
+              text-align: center; }
+              section #information .top-head .name > p:nth-of-type(2) > span:nth-of-type(1) {
+                background: #47d6c4; }
+              section #information .top-head .name > p:nth-of-type(2) > span:nth-of-type(2) {
+                background: #999; }
+      section #information .top-head .icon-jiantouyou {
+        font-size: 1.36rem;
+        width: 1.2rem;
+        height: 1.5rem;
+        flex-grow: 0;
+        align-items: center;
+        color: #666;
+        padding: 1.4rem 0;
+        margin-top: 0; }
+  section #mine {
+    flex-grow: 1;
+    background: #fff; }
+    section #mine > ul > li {
+      height: 6rem;
+      padding: 0 1rem;
+      border-bottom: 1px solid #ddd; }
+      section #mine > ul > li:last-child {
+        border: 0; }
+      section #mine > ul > li:nth-child(1) p span {
+        color: #47d6c4; }
+      section #mine > ul > li:nth-child(2) p span {
+        color: #ecb5b4; }
+      section #mine > ul > li:nth-child(3) p span {
+        color: #feb55f; }
+      section #mine > ul > li:nth-child(4) p span {
+        color: #e6816f; }
+      section #mine > ul > li:nth-child(5) p span {
+        color: #61bfe6; }
+      section #mine > ul > li:nth-child(6) p span {
+        color: #f86605; }
+      section #mine > ul > li > p {
+        width: 100%;
+        height: 1.92rem;
+        margin: auto;
+        padding-top: 1.92rem;
+        display: flex;
+        flex-flow: row nowrap; }
+        section #mine > ul > li > p > span {
+          font-size: 1.6rem;
+          line-height: 1.92rem;
+          flex-grow: 0; }
+        section #mine > ul > li > p > a {
+          font-size: 1.36rem;
+          color: #666; }
+        section #mine > ul > li > p .title {
+          flex-grow: 1;
+          padding-left: 0.64rem; }
+        section #mine > ul > li > p .icon-jiantouyou {
+          padding-top: 0.1rem;
+          flex-grow: 0; }
+
+/*# sourceMappingURL=my.css.map */

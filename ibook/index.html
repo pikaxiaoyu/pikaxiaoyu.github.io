@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+		<title>ibook</title>
+
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
+		<link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_1477320998_9964304.css" />
+		<link rel="stylesheet" type="text/css" href="css/public.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<script src="js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+
+	</head>
+
+	<body>
+		<div class="main">
+			<!--轮播图-->
+			<div class="swiper-container scroll">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<img src="img/index/bg1.png" />
+					</div>
+					<div class="swiper-slide">
+						<img src="img/index/bg2.png" />
+					</div>
+					<div class="swiper-slide">
+						<img src="img/index/bg3.png" />
+					</div>
+				</div>
+				<div class="swiper-pagination scroll"></div>
+			</div>
+			<!--滑动标签-->
+			<div class="swiper-container nowrap">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<ul>
+							<li>
+								<a href="html/news.html">时事新闻</a>
+							</li>
+
+							<li>
+								<a href="html/todaynovel.html">今日小说</a>
+							</li>
+
+							<li>
+								<a href="html/cartoon.html">漫画手绘</a>
+							</li>
+							<li>
+								<a href="html/times.html">环球时报</a>
+							</li>
+						</ul>
+					</div>
+					<div class="swiper-slide">
+						<ul>
+							<li style="margin-left: 0.5rem;">
+								<a href="html/special.html">特刊精选</a>
+							</li>
+							<li>
+								<a href="javascript:;">摄影游记</a>
+							</li>
+							<li>
+								<a href="javascript:;">最新小说</a>
+							</li>
+							<li>
+								<a href="javascript:;">7日热门</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<section>
+				<input class="search" type="text" value="" placeholder="搜索关键源" />
+				<span class="iconfont icon-fangdajing"></span>
+				<h1>
+					<span>| <a href="javascript:;">热门文章</a></span>
+					<a href="html/contribute.html"><span class="iconfont icon-shangchuandaoyun"></span>首页投稿</a>
+				</h1>
+			</section>
+			<div class="all">
+				<div class="loading">
+					<img src="img/index/loading.gif"/>
+				</div>
+			</div>
+		</div>
+		<!--底部-->
+		<footer>
+			<ul id="nav">
+				<li>
+					<a href="javascript:;" class="iconfont icon-homeicon
+"></a>
+					<h3>发现</h3>
+				</li>
+				<li>
+					<a href="html/concern.html" class="iconfont icon-guanyu"></a>
+					<h3>关注</h3>
+				</li>
+				<li>
+					<a href="javascript:;" class="iconfont icon-tuoyuan"></a>
+					<img src="img/index/book.png" />
+				</li>
+				<li>
+					<a href="html/message.html" class="iconfont icon-lingdang"></a>
+					<h3>消息</h3>
+				</li>
+				<li>
+					<a href="html/my.html" class="iconfont icon-wode"></a>
+					<h3>我的</h3>
+				</li>
+			</ul>
+		</footer>
+		<script src="js/jquery-1.11.3.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/public.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			//		轮播图
+			var mySwiper = new Swiper('.scroll', {
+					pagination: '.swiper-container .scroll', //分页
+					autoplay: 3000,
+					speed: 1000,
+					loop: true,
+				})
+				//			滑动
+			var mySwiper2 = new Swiper('.nowrap', {
+				pagination: '.swiper-container .nowrap',
+				slidesPerColumnFill: 'row',
+				freeMode: true,
+			})
+		</script>
+	</body>
+
+</html>

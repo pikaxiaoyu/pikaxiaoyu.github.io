@@ -1,0 +1,155 @@
+@charset "utf-8";
+$green: #47d6c4;
+$black: #333;
+$white: #fff;
+* {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+body {
+    font-family: "微软雅黑";
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+header {
+    height: 3.75rem;
+    background: $green;
+    padding: 0 1rem;
+    color: $white;
+    line-height: 3.75rem;
+    flex-grow: 0;
+    >.icon-jiantouzuo {
+        font-size: 1.7rem;
+        color: $white;
+    }
+    >span {
+        font-size: 1.4rem;
+    }
+}
+section {
+    flex: 1;
+    display: flex;
+    flex-flow: column;
+    >#main-top {
+        width: 100%;
+        height: 15.53rem;
+        background: #f0f0f6;
+        flex-grow: 0;
+        >p {
+            padding: 0 1rem;
+            height: 3.84rem;
+            background: #fff;
+            line-height: 3.84rem;
+            color: #666;
+            font-size: 1.2rem;
+            margin-bottom: 1.28rem;
+            display: flex;
+            flex-flow: row;
+            justify-content: space-between;
+            .mui-switch {
+                margin-top:0.9rem ;
+                width: 3.42rem;
+                height: 2.13rem;
+                position: relative;
+                border: 1px solid #dfdfdf;
+                background-color: #fdfdfd;
+                box-shadow: #dfdfdf 0 0 0 0 inset;
+                border-radius: 20px;
+                border-top-left-radius: 20px;
+                border-top-right-radius: 20px;
+                border-bottom-left-radius: 20px;
+                border-bottom-right-radius: 20px;
+                background-clip: content-box;
+                display: inline-block;
+                -webkit-appearance: none;
+                user-select: none;
+                outline: none;
+            }
+            .mui-switch:before {
+                content: '';
+                width: 1.84rem;
+                height:1.84rem;
+                position: absolute;
+                top: 0;
+                left: 0;
+                border-radius: 20px;
+                border-top-left-radius: 20px;
+                border-top-right-radius: 20px;
+                border-bottom-left-radius: 20px;
+                border-bottom-right-radius: 20px;
+                background-color: #fff;
+                box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+            }
+            .mui-switch:checked {
+                border-color: #64bd63;
+                box-shadow: #64bd63 0 0 0 16px inset;
+                background-color: #64bd63;
+            }
+            .mui-switch:checked:before {
+                left: 1.5rem;
+            }
+            .mui-switch.mui-switch-animbg {
+                transition: background-color ease 0.4s;
+            }
+            .mui-switch.mui-switch-animbg:before {
+                transition: left 0.3s;
+            }
+            .mui-switch.mui-switch-animbg:checked {
+                box-shadow: #dfdfdf 0 0 0 0 inset;
+                background-color:$green;
+                transition: border-color 0.4s, background-color ease 0.4s;
+            }
+            .mui-switch.mui-switch-animbg:checked:before {
+                transition: left 0.3s;
+            }
+        }
+        >div {
+            padding: 0 1rem;
+            >p:nth-child(1) {
+                color: $green;
+            }
+            >p:nth-child(2) {
+                color: #999;
+            }
+        }
+    }
+    >#main-bottom {
+        width: 100%;
+        flex-grow: 1;
+        position: relative;
+        >ul {
+            padding: 0 1rem;
+            >li {
+                width: 100%;
+                height: 4rem;
+                border-bottom: 1px solid #ddd;
+                display: flex;
+                flex-flow: row;
+                justify-content: space-between;
+                >span,
+                a {
+                    color: #666;
+                    font-size: 1.2rem;
+                    line-height: 4rem;
+                }
+            }
+        }
+        #hint{
+            width:20rem;
+            height:3rem;
+            background: rgba(0,0,0,.2);
+            position: absolute;
+            bottom: 5rem;
+            left: 50%;
+            margin-left: -10rem;
+        }
+    }
+}

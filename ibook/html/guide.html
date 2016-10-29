@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+		<title>引导页</title>
+		<link rel="stylesheet" type="text/css" href="../css/swiper.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/guide.css"/>
+		<script src="../js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="swiper-container">
+		  <div class="swiper-wrapper">
+		    <div class="swiper-slide">
+		    	<img src="../img/guide/guide1.png" />
+		    	<a href="register.html">跳  过</a>
+		    </div>
+		    <div class="swiper-slide">
+		    	<img src="../img/guide/guide2.png" />
+		    	<a href="register.html">跳  过</a>
+		    </div>
+		    <div class="swiper-slide">    
+		    	<img src="../img/guide/guide3.png" />
+		    	<a href="register.html">进  入</a>
+		    </div>
+		  </div>
+		  <div class="swiper-pagination"></div>
+		</div>
+		<script src="../js/public.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var mySwiper = new Swiper('.swiper-container', {
+				pagination : '.swiper-pagination',
+			})
+			
+		</script>
+	</body>
+</html>

@@ -1,0 +1,23 @@
+.icon-sousuo1 {
+  position: absolute;
+  top: 4%;
+  right: 5%;
+  font-size: 1.5rem; }
+
+footer {
+  height: 2rem;
+  padding: 1rem 0;
+  display: flex;
+  flex-flow: row;
+  background: #47d6c4;
+  justify-content: space-around; }
+  footer > a {
+    width: 100%;
+    text-align: center;
+    line-height: 2rem;
+    font-size: 1.2rem;
+    color: #fff; }
+    footer > a:nth-child(1) {
+      border-right: 1px solid #fff; }
+
+/*# sourceMappingURL=index1.css.map */

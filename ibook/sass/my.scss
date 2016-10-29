@@ -1,0 +1,147 @@
+@charset "utf-8";
+$green : #47d6c4;
+$black : #333;
+$white : #fff;
+#nav li:nth-of-type(5),li:nth-of-type(5) .icon-geren{
+    color:$green!important ;
+}
+#nav li:nth-of-type(1),li:nth-of-type(1) .icon-fangzi{
+    color:$black!important ;
+}
+header{
+    font-size: 1.7rem;
+    text-align: center;
+}
+section{
+    width: 100%;
+    height: 100vh;
+    flex: 1;
+    background: #fcfcfc;
+    display: flex;
+    flex-flow: column;
+    overflow-y: scroll;
+    #information{
+        padding: 0 1rem;
+        height: 7.9rem;
+        flex-grow:0;
+        background: $white;
+        margin-bottom: 1.28rem;
+        
+        .top-head{
+            width: 100%;
+            height:4.48rem ;
+            margin:1.8rem auto;
+            display: flex;
+            flex-flow: row nowrap;
+            >#head{
+            width:4.48rem;
+            flex-grow: 0;
+            align-items: center; 
+            >img{
+                width:4.48rem;
+                height: 4.48rem;
+                border-radius: 100%;  
+            }
+            }
+            .name{
+                flex-grow:1;
+                >p{
+                    padding-left: 1rem;
+                    &:nth-of-type(1){
+                        font-size:1.28rem ;
+                        line-height: 2.35rem;
+                    }
+                    &:nth-of-type(2){
+                        font-size:0.8rem ;
+                        >span{
+                            display: inline-block;
+                            width: 3rem;
+                            height:1.4rem;
+                            line-height: 1.4rem;
+                            color:$white ;
+                            text-align: center;
+                            &:nth-of-type(1){
+                                background: $green;
+                            }
+                            &:nth-of-type(2){
+                                background: #999;
+                            }
+                        }
+                    }
+                }
+                
+            }
+            .icon-jiantouyou{
+                font-size: 1.36rem;
+                width: 1.2rem;
+                height:1.5rem ;
+                flex-grow: 0;
+                align-items: center;
+                color: #666;
+                padding: 1.4rem 0;
+                margin-top: 0;
+            }
+        }
+        
+    }
+    #mine{
+        flex-grow:1;
+        background: $white;
+        >ul{
+            >li{
+                height: 6rem;
+                padding: 0 1rem;
+                border-bottom:1px solid #ddd;
+                &:last-child{
+                    border: 0;
+                }
+                &:nth-child(1) p span{
+                    color: #47d6c4;
+                }
+                &:nth-child(2) p span{
+                    color: #ecb5b4;
+                }
+                &:nth-child(3) p span{
+                    color: #feb55f;
+                }
+                &:nth-child(4) p span{
+                    color: #e6816f;
+                }
+                &:nth-child(5) p span{
+                    color: #61bfe6;
+                }
+                &:nth-child(6) p span{
+                    color: #f86605;
+                }
+                
+                >p{
+                    width:100%;
+                    height: 1.92rem;
+                    margin:auto;
+                    padding-top: 1.92rem;
+                    display: flex;
+                    flex-flow: row nowrap;
+                    >span{
+                        font-size: 1.6rem;
+                        line-height:1.92rem ;
+                        flex-grow:0;
+                    }
+                    >a{
+                        font-size:1.36rem ;
+                        color: #666;
+                    }
+                    .title{
+                        flex-grow:1;
+                        padding-left: 0.64rem;
+                    }
+                    .icon-jiantouyou{
+                        padding-top: 0.1rem;
+                        flex-grow:0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+ 

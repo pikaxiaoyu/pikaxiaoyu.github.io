@@ -1,0 +1,133 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0; }
+
+li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+body {
+  font-family: "微软雅黑";
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  height: 100vh; }
+
+header {
+  height: 3.75rem;
+  background: #47d6c4;
+  padding: 0 1rem;
+  color: #fff;
+  line-height: 3.75rem;
+  flex-grow: 0; }
+  header > .icon-jiantouzuo {
+    font-size: 1.7rem;
+    color: #fff; }
+  header > span {
+    font-size: 1.4rem; }
+
+section {
+  flex: 1;
+  display: flex;
+  flex-flow: column; }
+  section > #main-top {
+    width: 100%;
+    height: 15.53rem;
+    background: #f0f0f6;
+    flex-grow: 0; }
+    section > #main-top > p {
+      padding: 0 1rem;
+      height: 3.84rem;
+      background: #fff;
+      line-height: 3.84rem;
+      color: #666;
+      font-size: 1.2rem;
+      margin-bottom: 1.28rem;
+      display: flex;
+      flex-flow: row;
+      justify-content: space-between; }
+      section > #main-top > p .mui-switch {
+        margin-top: 0.9rem;
+        width: 3.42rem;
+        height: 2.13rem;
+        position: relative;
+        border: 1px solid #dfdfdf;
+        background-color: #fdfdfd;
+        box-shadow: #dfdfdf 0 0 0 0 inset;
+        border-radius: 20px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        background-clip: content-box;
+        display: inline-block;
+        -webkit-appearance: none;
+        user-select: none;
+        outline: none; }
+      section > #main-top > p .mui-switch:before {
+        content: '';
+        width: 1.84rem;
+        height: 1.84rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 20px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        background-color: #fff;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4); }
+      section > #main-top > p .mui-switch:checked {
+        border-color: #64bd63;
+        box-shadow: #64bd63 0 0 0 16px inset;
+        background-color: #64bd63; }
+      section > #main-top > p .mui-switch:checked:before {
+        left: 1.5rem; }
+      section > #main-top > p .mui-switch.mui-switch-animbg {
+        transition: background-color ease 0.4s; }
+      section > #main-top > p .mui-switch.mui-switch-animbg:before {
+        transition: left 0.3s; }
+      section > #main-top > p .mui-switch.mui-switch-animbg:checked {
+        box-shadow: #dfdfdf 0 0 0 0 inset;
+        background-color: #47d6c4;
+        transition: border-color 0.4s, background-color ease 0.4s; }
+      section > #main-top > p .mui-switch.mui-switch-animbg:checked:before {
+        transition: left 0.3s; }
+    section > #main-top > div {
+      padding: 0 1rem; }
+      section > #main-top > div > p:nth-child(1) {
+        color: #47d6c4; }
+      section > #main-top > div > p:nth-child(2) {
+        color: #999; }
+  section > #main-bottom {
+    width: 100%;
+    flex-grow: 1;
+    position: relative; }
+    section > #main-bottom > ul {
+      padding: 0 1rem; }
+      section > #main-bottom > ul > li {
+        width: 100%;
+        height: 4rem;
+        border-bottom: 1px solid #ddd;
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between; }
+        section > #main-bottom > ul > li > span,
+        section > #main-bottom > ul > li a {
+          color: #666;
+          font-size: 1.2rem;
+          line-height: 4rem; }
+    section > #main-bottom #hint {
+      width: 20rem;
+      height: 3rem;
+      background: rgba(0, 0, 0, 0.2);
+      position: absolute;
+      bottom: 5rem;
+      left: 50%;
+      margin-left: -10rem; }
+
+/*# sourceMappingURL=concernSet.css.map */

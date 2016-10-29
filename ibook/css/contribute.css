@@ -1,0 +1,37 @@
+section {
+  flex-grow: 1; }
+  section .welcome {
+    display: flex;
+    padding: 0 2.5rem; }
+    section .welcome .left {
+      float: left; }
+      section .welcome .left .icon-a4 {
+        font-size: 6rem;
+        color: #ddd;
+        position: relative; }
+        section .welcome .left .icon-a4 .icon-shangchuandaoyun {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          margin-left: -1rem;
+          margin-top: -1rem;
+          font-size: 2rem;
+          color: #47d6c4; }
+    section .welcome .right {
+      width: 16rem;
+      float: left;
+      padding: 1rem;
+      color: #999; }
+      section .welcome .right p:nth-of-type(1) {
+        line-height: 1.5rem;
+        color: #333; }
+  section > p {
+    padding: 0 1rem;
+    line-height: 5rem;
+    color: #8c8c8c; }
+    section > p a {
+      color: #88b7d0; }
+  section > p:nth-of-type(2), section > p:nth-of-type(3) {
+    text-align: center; }
+
+/*# sourceMappingURL=contribute.css.map */
