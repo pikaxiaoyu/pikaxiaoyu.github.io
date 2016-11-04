@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" href="css/animate.css" />
+		<link rel="stylesheet" href="css/swiper.min.css" />
+		<script type="text/javascript" src="js/swiper.animate1.0.2.min.js" ></script>
+		<script type="text/javascript" src="js/swiper.min.js" ></script>
+		<style>
+			*{padding:0;margin:0;}
+			html,body{
+				width:100%;
+				height:100%;
+				/*overflow:hidden;*/
+			}
+			.swiper-container,.swiper-wrapper,.swiper-slide{
+				width:100%;
+				height:100%;
+			}
+			.swiper-slide img{
+				width:100%;
+				height:100%;
+				display:block;
+			}
+			.swiper-slide{
+				position:relative
+			}
+			.swiper-slide .p1{
+				font-size:35px;
+				color:#fff;
+				position:absolute;
+				left:20px;
+				bottom:120px;
+				font-weight: bold;
+			}
+			.swiper-slide .p2{
+				font-size:20px;
+				color:#fff;
+				position:absolute;
+				left:36px;
+				bottom:75px;
+				font-weight: bold;
+			}
+			
+			.swiper-slide .p3{
+				font-size:35px;
+				color:#fff;
+				position:absolute;
+				left:20px;
+				top:30px;
+				font-weight: bold;
+			}
+			.swiper-slide .p4{
+				font-size:20px;
+				color:#fff;
+				position:absolute;
+				left:36px;
+				top:75px;
+				font-weight: bold;
+			}
+			.swiper-slide .p5{
+				font-size:35px;
+				color:#fff;
+				position:absolute;
+				left:20px;
+				bottom:152px;
+				font-weight: bold;
+			}
+			.swiper-slide .p6{
+				font-size:20px;
+				color:#fff;
+				position:absolute;
+				left:36px;
+				bottom:58px;
+				font-weight: bold;
+			}
+			.swiper-slide .last{
+				width:38px;
+				height:28px;
+				background:url(img/units-icons.png) no-repeat -68px -13px;
+				z-index: 100;
+				position:absolute;
+				left:48%;
+				bottom:2%;
+			}
+			.music{
+				width:53px;
+				height:53px;
+				background:url(img/units-icons.png) no-repeat -1px -1px;
+				z-index: 1000;
+				position:fixed;
+				top:15px;
+				right:15px;
+				animation:name 2s infinite linear;
+				-webkit-animation:name 2s infinite linear ;
+			}
+			@keyframes name{
+				from{
+					transform: rotate(0deg);
+					-webkit-transform: rotate(0deg);
+				}
+				to{
+					transform: rotate(360deg);
+					-webkit-transform: rotate(360deg);
+				}
+			}
+		</style>
+	</head>
+	<body>
+		 <div class="swiper-container">
+		    <div class="swiper-wrapper">
+		        <div class="swiper-slide">
+		        	<img src="img/1.jpg" /> 
+			    	<p class="p1 ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay="1.5s">幸福</p>
+			    	<p class="p2 ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="2s" swiper-animate-delay="1.8s">并不是你的房子有多大，<br/>而是房子传出的笑声有多甜。</p>
+					<div class="last ani infinite" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="1.5s"></div>			
+		        </div>
+		        <div class="swiper-slide">
+		        	<img class="img ani" swiper-animate-effect="rotateInUpLeft" swiper-animate-duration="2s" swiper-animate-delay="1s" src="img/2.jpg" /> 
+			    	<p class="p1 ani" swiper-animate-effect="bounceInDown" swiper-animate-duration="1s" swiper-animate-delay="1.8s">幸福</p>
+			    	<p class="p2 ani" swiper-animate-effect="fadeInUpBig" swiper-animate-duration="2s" swiper-animate-delay="2s">不是你开多豪华的车，<br/>而是你开着车能平安回家。</p>
+					<div class="last ani infinite" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="1.5s"></div>
+		        </div>
+		        <div class="swiper-slide">
+		        	<img class="img ani" swiper-animate-effect="slideInDown" swiper-animate-duration="2s" swiper-animate-delay="1s" src="img/3.jpg" /> 
+			    	<p class="p3 ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay="1.8s">幸福</p>
+			    	<p class="p4 ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="2s" swiper-animate-delay="2s">不是你存了多少钱，而是天天<br/>心身自由，不停地干自己喜欢的事。</p>
+					<div class="last ani infinite" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="1.5s"></div>
+		        </div>
+		        <div class="swiper-slide">
+		        	<img src="img/4.jpg" /> 
+			    	<p class="p3 ani" swiper-animate-effect="flipInY" swiper-animate-duration="1s" swiper-animate-delay="1.5s">幸福</p>
+			    	<p class="p4 ani" swiper-animate-effect="rotateIn" swiper-animate-duration="2s" swiper-animate-delay="2s">不是你的爱人有多漂亮，<br/>而是你的爱人笑的有多甜。</p>
+					<div class="last ani infinite" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="1.5s"></div>
+		        </div>
+		        <div class="swiper-slide">
+		        	<img class="img ani" swiper-animate-effect="zoomInUp" swiper-animate-duration="1s" swiper-animate-delay="0.5s" src="img/5.jpg" /> 
+			    	<p class="p1 ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay="1.8s">幸福</p>
+			    	<p class="p2 ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="2s" swiper-animate-delay="2s">不是吃的好穿的好，<br/>而是没病没灾。</p>
+					<div class="last ani infinite" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="1.5s"></div>
+		        </div>
+		        <div class="swiper-slide">
+		        	<img class="img ani" swiper-animate-effect="swing" swiper-animate-duration="2s" swiper-animate-delay="2.5s" src="img/6.jpg" /> 
+			    	<p class="p5 ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay="1.8s">幸福</p>
+			    	<p class="p6 ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="2s" swiper-animate-delay="2s">不是在你成功时喝彩多热烈，而<br/>是有个声音对你说：亲爱<br/>的加油。</p>
+					<div class="last ani infinite" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="1.5s"></div>
+		        </div>
+		        <div class="swiper-slide">
+		        	<img class="img ani" swiper-animate-effect="pulse" swiper-animate-duration="2s" swiper-animate-delay="1s" src="img/7.jpg" /> 
+			    	<p class="p3 ani" swiper-animate-effect="rubberBand" swiper-animate-duration="1s" swiper-animate-delay="1.8s">幸福</p>
+			    	<p class="p4 ani" swiper-animate-effect="zoomInUp" swiper-animate-duration="2s" swiper-animate-delay="2s">不是你听过多少甜言蜜语，而<br/>是你伤心落泪时有人对你说：<br/>没事，有我在。</p>
+					<div class="last ani infinite" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="1.5s"></div>
+		        </div>
+		        <div class="swiper-slide">
+		        	<img class="img ani" swiper-animate-effect="flipInX" swiper-animate-duration="2s" swiper-animate-delay="1s" src="img/8.jpg" /> 
+			    	<p class="p3 ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay="1.8s">幸福</p>
+			    	<p class="p4 ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="2s" swiper-animate-delay="2s">不是你听过多少甜言蜜语，而<br/>是你伤心落泪时有人对你说：<br/>没事，有我在。</p>
+					<div class="last ani infinite" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="1.5s"></div>			
+		        </div>
+		    </div>
+		</div>
+		<div class="music"></div>
+		<audio id="aud" src="陈奕迅 - 稳稳的幸福.mp3" loop="loop"></audio>
+		<script>
+			var mySwiper=new Swiper(".swiper-container",{
+				direction: 'vertical',
+    			onInit: function(swiper){ //Swiper2.x的初始化是onFirstInit
+				   swiperAnimateCache(swiper); //隐藏动画元素 
+				   swiperAnimate(swiper); //初始化完成开始动画
+				}, 
+				onSlideChangeEnd: function(swiper){ 
+				    swiperAnimate(swiper); //每个slide切换结束时也运行当前slide动画
+				}
+			})
+			var aud=document.getElementById("aud")
+			var music=document.getElementsByClassName("music")[0];
+			music.onclick=function(){
+				if(aud.paused){
+					aud.play()
+				}else{
+					aud.pause()
+				}
+			}
+		</script>
+	</body>
+</html>
